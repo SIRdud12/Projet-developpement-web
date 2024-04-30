@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Votre boutique KIKO</title>
+  <title>Votre boutique G R I M G A R</title>
   <link rel="stylesheet" href="siteWeb-cosmetique.css">
   <!-- Ajouter le lien vers la bibliothèque FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -11,13 +11,13 @@
 <body>
   <!-- Barre de navigation -->
   <nav>
-    <h1>KIKO</h1>
+    <h1>DERMAFLORE</h1>
     <div class="onglets">
-      <p class="link">Nouveautés</p>
-      <p class="link">Sérums</p>
-      <p class="link">Crèmes</p>
-      <p class="link">Nettoyants</p>
-      <p class="link">Conseils</p>
+      <!-- <p class="link"><a href="Nouveautés.html">Nouveautés</a></p> -->
+      <p class="link"><a href="Sérums.html">Sérum</a></p>
+      <p class="link"><a href="Crème.html">Crèmes</a></p>
+      <p class="link"><a href="Nettoyants.html">Nettoyants</a></p>
+      <p class="link"><a href="Conseils.html">Conseils</a></p>
       <form>
         <input type="search" placeholder="Rechercher">
       </form>
@@ -35,8 +35,7 @@
     </video>
     <!-- Contenu du header -->
     <div class="header-content">
-      <h1>C'est votre boutique, votre chez-vous.</h1>
-      <button>Naviguer <i class="fas fa-paper-plane"></i></button>
+      
     </div>
     <!-- Fin du contenu du header -->
   </header>
@@ -50,7 +49,7 @@
       <div class="best-sellers-grid">
         <!-- Exemple de carte de produit -->
         <div class="product-card">
-          <img src="image1.jpg" alt="Produit 1">
+          <img src="Cerav.JPG" alt="Produit 1">
           <div class="product-info">
             <h3>Nom du produit 1</h3>
             <p>Description du produit 1</p>
@@ -62,7 +61,7 @@
         <!-- Répéter ce bloc pour chaque produit -->
         <!-- Exemple d'autres cartes de produit -->
         <div class="product-card">
-          <img src="image2.jpg" alt="Produit 2">
+          <img src="y1.jpg" alt="Produit 2">
           <div class="product-info">
             <h3>Nom du produit 2</h3>
             <p>Description du produit 2</p>
@@ -72,7 +71,7 @@
           </div>
         </div>
         <div class="product-card">
-          <img src="image3.jpg" alt="Produit 3">
+          <img src="B2.jpg" alt="Produit 3">
           <div class="product-info">
             <h3>Nom du produit 3</h3>
             <p>Description du produit 3</p>
@@ -82,7 +81,7 @@
           </div>
         </div>
         <div class="product-card">
-          <img src="image4.jpg" alt="Produit 4">
+          <img src="GR1.JPG" alt="Produit 4">
           <div class="product-info">
             <h3>Nom du produit 4</h3>
             <p>Description du produit 4</p>
@@ -96,34 +95,58 @@
     <!-- Fin de la section Meilleures ventes -->
     
     <!-- Section Saison -->
-    <section class="seasons">
-      <h2>Saisons</h2>
+    <section class="Nouveautés">
+      <h2>Nouveautés</h2>
       <div class="seasons-grid">
         <!-- Exemple de carte de saison -->
         <div class="season-card">
-          <img src="printemps.jpg" alt="Printemps">
+          <img src="ro1.png" alt="Printemps">
+          <h3>Nom du produit 4</h3>
+          <p>Description du produit 3</p>
+            <p>Prix: 35€</p>
+            <button>Ajouter au panier</button>
+            <button>Ajouter aux favoris</button>
+
           <div class="season-info">
-            <h3>Printemps</h3>
+            <h3></h3>
           </div>
         </div>
         <!-- Répéter ce bloc pour chaque saison -->
         <!-- Exemple d'autres cartes de saison -->
         <div class="season-card">
-          <img src="ete.jpg" alt="Été">
+          <img src="y2.jpg" alt="Été">
           <div class="season-info">
-            <h3>Été</h3>
+            <h3>Nom du produit 4</h3>
+          <p>Description du produit 3</p>
+            <p>Prix: 35€</p>
+            <button>Ajouter au panier</button>
+            <button>Ajouter aux favoris</button>
+
+            <h3></h3>
           </div>
         </div>
         <div class="season-card">
-          <img src="automne.jpg" alt="Automne">
+          <img src="Cor2.JPG" alt="Automne">
           <div class="season-info">
-            <h3>Automne</h3>
+            <h3>Nom du produit 4</h3>
+          <p>Description du produit 3</p>
+            <p>Prix: 35€</p>
+            <button>Ajouter au panier</button>
+            <button>Ajouter aux favoris</button>
+
+            <h3></h3>
           </div>
         </div>
         <div class="season-card">
-          <img src="hiver.jpg" alt="Hiver">
+          <img src="Serum2.JPG" alt="Hiver">
           <div class="season-info">
-            <h3>Hiver</h3>
+            <h3>Nom du produit 4</h3>
+          <p>Description du produit 3</p>
+            <p>Prix: 35€</p>
+            <button>Ajouter au panier</button>
+            <button>Ajouter aux favoris</button>
+
+            <h3></h3>
           </div>
         </div>
       </div>
@@ -136,29 +159,49 @@
       <div class="top-categories-grid">
         <!-- Exemple de carte de catégorie -->
         <div class="category-card">
-          <img src="levres.jpg" alt="Lèvres">
+          <img src="Cor2.JPG" alt="Lèvres">
           <div class="category-info">
-            <h3>Lèvres</h3>
+            <h3>Nom du produit 4</h3>
+          <p>Description du produit 3</p>
+            <p>Prix: 35€</p>
+            <button>Ajouter au panier</button>
+            <button>Ajouter aux favoris</button>
+
           </div>
         </div>
         <!-- Répéter ce bloc pour chaque catégorie -->
         <!-- Exemple d'autres cartes de catégorie -->
         <div class="category-card">
-          <img src="yeux.jpg" alt="Yeux">
+          <img src="Cor3.JPG" alt="Yeux">
           <div class="category-info">
-            <h3>Yeux</h3>
+            <h3>Nom du produit 4</h3>
+          <p>Description du produit 3</p>
+            <p>Prix: 35€</p>
+            <button>Ajouter au panier</button>
+            <button>Ajouter aux favoris</button>
+           
           </div>
         </div>
         <div class="category-card">
-          <img src="visage.jpg" alt="Visage">
+          <img src="COR1.JPG" alt="Visage">
           <div class="category-info">
-            <h3>Visage</h3>
+            <h3>Nom du produit 4</h3>
+          <p>Description du produit 3</p>
+            <p>Prix: 35€</p>
+            <button>Ajouter au panier</button>
+            <button>Ajouter aux favoris</button>
+
           </div>
         </div>
         <div class="category-card">
-          <img src="soin-peau.jpg" alt="Soin de peau">
+          <img src="Cor2.JPG" alt="Soin de peau">
           <div class="category-info">
-            <h3>Soin de peau</h3>
+           <h3>Nom du produit 4</h3>
+          <p>Description du produit 3</p>
+            <p>Prix: 35€</p>
+            <button>Ajouter au panier</button>
+            <button>Ajouter aux favoris</button>
+
           </div>
         </div>
       </div>
@@ -182,4 +225,5 @@
   <!-- Fin du pied de page -->
 </body>
 </html>
+
 

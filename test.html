@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css" /> 
+    <script src="https://kit.fontawesome.com/8ddecbbdca.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        section{
+            padding: 5% 10%;
+        }
+    .main-home{ 
+        width: 100%;
+        height: 100vh;
+        background-image: url('i1.jpeg');
+        background-position: center;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        }
+        .main-text h5{
+            color:#EE1C47;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+         .main-text h1{
+            color: #000;
+            font-size: 65px;
+            text-transform: capitalize;
+            line-height: 1.1;
+            font-weight: 600;
+            margin: 6px 0 10px;
+
+         }
+         .main-text p{
+            color: #333c56;
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 20px;
+         }
+         .main-btn{
+            display: inline-block;
+            color: #111;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: capitalize;
+            border: 2px solid #111;
+            padding: 12px 25px;
+            transition:all .42s ease;
+         }
+         .main-btn:hover{
+            background-color: #000;
+            color: #fff;
+         }
+         .main-btn i{
+            vertical-align: middle;
+         }
+         .down-arrow{
+            position:absolute;
+            top: 85%;
+            right: 11%;
+         }
+         .down-arrow i:hover{
+            font-size: 30px;
+            color: #2c2c2c;
+            border: 2px solid #2c2c2c;
+            border-radius: 50px;
+            padding: 12px 12px;
+         }
+         down i:hover{
+            background-color: #2c2c2c;
+            color: #fff;
+            transition: all .42s ease;
+         }
+         .center-text h2{
+            color: #111;
+            font-size: 28px;
+            text-transform: capitalize;
+            text-align: center;
+         }
+         .center-text span{
+            color: #EE1C47;
+         }
+         .products{
+         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+        gap: 2rem;
+
+         }
+         .row {
+            
+            position: relative;
+            transition: all .40s;
+        }
+        .row img {
+            width: 100%;
+            height: auto;
+            transition: all .40s;
+        }
+        .row img:hover{
+            transform: scale(0.9);
+        }
+        .product-text h5{
+            position: absolute;
+            top: 13px;
+            left: 13px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color: red;
+            padding: 3px 10px;
+            border-radius: 2px;
+        }  
+        .heart-icon{
+            position: absolute;
+            right: 0;
+            font-size: 20px;
+        }
+        .heart-icon:hover{
+            color: #EE1C47;
+        }
+        .ratting i{
+            color: #FF8C00;
+            font-size: 18px;
+        }
+        .price h4{
+            color: #111;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+        footer {
+  margin-top: 100px;
+  background-color: #000;
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+footer .social-media{
+  display: flex;
+}
+footer .social-media p{
+  margin-right: 15px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  padding: 5px;
+  text-align:center;
+  width: 20px;
+  cursor:pointer;
+}
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px){
+  nav .onglets .link, nav h1{
+    display:none;
+  }
+  .cards .card img{
+    width: 300px;
+  }
+}
+    </style>
+</head>
+<body>
+    <section class="main-home">
+        <div class="main-text">
+          <h5>Découvrez notre collection de crèmes visages </h5>  
+          <h1>New Winter <br>Collection</h1>
+          <p>Il n'y a rien de mieux qu'une peau sans imperfection</p>
+          <a href="#" class="main-btn">Acheter maintenant<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="down-arrow">
+            <a href="#trending" class="down"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+        </section>
+        <section>
+        <div class="center-text">
+            <h2>NOS PRODUITS<span> TENDANCES</span></h2>
+        </div>
+        <div class="products">
+           <div class="row">
+            <img src="y1.jpg">
+            <div class="product-text"> 
+                <h5>-50%</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="price">
+            <h4>Beauty Of Joseon - Crème Solaire Relief Sun au Riz + Probiotique SPF50+ PA++++</h4>
+            <p>25€</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="y2.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="price">
+            <h4>CeraVe Lotion Hydratante Pour Peaux Sèches à Très Sèches 236 ml</h4>
+            <p>15€</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="y3.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Anti-tache</h4>
+            <p>25€</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="y4.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>anti-âge</h4>
+            <p>30€</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="y5.jpg">
+            <div class="product-text"> 
+                <h5>-20%</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Crème hydratante</h4>
+                <div class="row">
+                    <img src="O1.webp">
+                    <div class="product-text"> 
+                        <h5>Sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="ratting">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div>
+                    <h4>Crème hydratante</h4>
+                    <p>25€</p>
+                    </div>
+                   </div>  Running Set</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="CR15.jpeg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Half Running Set</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="CR3.jpeg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Half Running Set</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="CR5.jpeg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Half Running Set</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="CR6.jpeg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Half Running Set</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="CR9.jpeg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Crème hydratante</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="CR8.jpeg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Crème hydratante</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="CR1.jpeg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Crème hydratante</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="CR1.jpeg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Crème lavante hydratante</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="B5.webp">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Crème visage coréenne anti-âge et illuminatrice au miel, extraits de ginseng rouge et céramides</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="B4.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>crème hydratante</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="B3.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>BEAUTY OF JOSEON - Mini Relief Sun : Rice + Probiotics SPF50+ PA++++, 10ml</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="B2.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>-Crème hydratante</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="B1.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Protection solaire efficace et soin</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="G4.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Half Running Set</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="G2.webp">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>crème pour le corps à l'avocat</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="G1.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Garnier Skin Active BB Cream Classic Ton Moyen 50 Ml</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="ro3.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>LA ROCHE POSAY TOLÉRIANE Sensitive Crème - 40ml</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="ro2.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>HYDRAPHASE HA LÉGÈRE CRÈME HYDRATANTE VISAGE À L'ACIDE HYALURONIQUE</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="ro1.png">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Lipikar crème relipidante. Texture légère</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="OR2.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Half Running Set</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="OR1.jpg">
+            <div class="product-text"> 
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Half Running Set</h4>
+            <p>$99 - $129</p>
+            </div>
+           </div> 
+
+        </div>
+    </section>
+<section>
+    <footer>
+        <p>&copy; Contactez-nous</p>
+        <div class="social-media">
+          <p><i class="fab fa-facebook-f"></i></p>
+          <p><i class="fab fa-twitter"></i></p>
+          <p><i class="fab fa-instagram"></i></p>
+          <p><i class="fab fa-linkedin-in"></i></p>
+        </div>
+      </footer>
+   </section> 
+</body>
+</html>
+
+
+
+
+
+
