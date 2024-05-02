@@ -4,22 +4,46 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'YourKikoFont', sans-serif; /* Utiliser la police Kiko */
-  background-color: #EAE7DD;
-
+  background-color: #FFF;
 }
+h1, h2, h3, p {
+  color: #333333;
+}
+/* Styles pour les titres importants */
+h1, h2 {
+  color: #D81B60; /* Couleur rose vif */
+  text-transform: uppercase; /* Mettre en majuscules */
+  text-align: center; /* Centrer le texte */
+  margin-bottom: 20px; /* Ajouter un espacement en bas */
+}
+
+/* Style pour le titre de la barre de navigation */
+nav h1 {
+  font-size: 24px; /* Augmenter la taille du titre */
+}
+
+/* Style pour les titres de section */
+section h2 {
+  font-size: 30px; /* Augmenter la taille du titre */
+}
+
+/* Style pour les titres des cartes de produit, saison et catégorie */
+.product-info h3,
+.season-info h3,
+.category-info h3 {
+  font-size: 25px; /* Augmenter la taille du titre */
+  margin-bottom: 10px; /* Ajouter un espacement en bas */
+}
+
 
 /* Styles pour la barre de navigation */
 nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1px;
-  background-color: #DDD0C8; /* Couleur de fond de la barre de navigation */
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: top 0.3s;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #F2F2F2; /* Couleur de fond de la barre de navigation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-hidden {
@@ -27,17 +51,18 @@ nav {
 }
 
 nav a {
-text-decoration: none;
-color: black;
+  text-decoration: none;
+  color: black;
 }
 
 nav h1 {
   font-size: 20px;
+  color:  #333333;
 }
 
 nav .onglets {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 nav .onglets p {
@@ -51,7 +76,7 @@ nav .onglets input {
   padding: 15px;
   border-radius: 30px;
   border: none;
-  background-color: #f2f2f2;
+  background-color: lightgray;
   outline: none;
 }
 
@@ -80,6 +105,7 @@ section {
 
 section h2 {
   text-align: center;
+  color:  #333333;
 }
 
 /* Styles pour les grilles de produits, saisons et catégories */
@@ -96,7 +122,8 @@ section h2 {
 .product-card,
 .season-card,
 .category-card {
-  background-color: #f9f9f9;
+  background-color: #FFF;
+  border: 1px solid #EAE7DD;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -121,7 +148,7 @@ button {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
-  background-color: #99775C;
+  background-color:#D81B60;
   color: white;
   border: none;
   border-radius: 5px;
@@ -134,22 +161,88 @@ button:hover {
 }
 
 /* Styles pour le pied de page */
-footer {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  width: 100%;
-  bottom: 0;
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 30px 0;
 }
 
-.social-media {
+.footer-inner {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.social-media p {
-  margin: 0 10px;
+.footer-section {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
 }
+
+.footer-heading {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons li a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.footer-legal {
+  text-align: center;
+}
+
+.legal-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.legal-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.legal-links li:last-child {
+  margin-right: 0;
+}
+
+.legal-links li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
 
 /* Media query pour les écrans plus petits */
 @media screen and (max-width: 640px) {
@@ -157,6 +250,97 @@ footer {
   nav h1 {
     display: none;
   }
+}
+
+/* Styles pour la fenêtre modale */
+.modal {
+  display: none; /* Masquer la fenêtre modale par défaut */
+  position: fixed; /* Position fixe pour couvrir l'écran */
+  z-index: 1000; /* Mettre la fenêtre modale au-dessus de tout le reste */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+  overflow: auto; /* Activer le défilement si nécessaire */
+  backdrop-filter: blur(5px);  /* flou de fond */
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto; /* Centrer la fenêtre modale */
+  margin-left: 50%;
+  margin-right: 2%;
+  
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  max-width: 500px; /* Largeur maximale de la fenêtre modale */
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Styles pour le formulaire de connexion */
+#login-form {
+  display: block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#login-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#login-form input[type="email"]:focus,
+#login-form input[type="password"]:focus {
+  border-color: #D81B60;
+}
+
+#login-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #D81B60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#login-form button[type="submit"]:hover {
+  background-color: #C21850;
 }
 
 
