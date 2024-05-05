@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="siteWeb-cosmetique.css">
   <!-- Ajouter le lien vers la bibliothèque FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://kit.fontawesome.com/8ddecbbdca.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Barre de navigation -->
@@ -55,11 +56,59 @@
   <!-- Fin de la fenêtre modale -->
   
   <!-- Header avec la vidéo en arrière-plan -->
-  <header class="video-container">
-    <video autoplay loop muted class="background-video">
-      <source src="WhatsApp Video 2024-03-29 at 15.53.20.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <section class="slideshow-container">
+  <!-- Première image -->
+  <div class="mySlides fade">
+    <div class="image-container">
+      <img src="Photo_fond1.jpeg" alt="Image 1">
+      <div class="overlay">
+        <div class="text">Description de l'image 1</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Deuxième image -->
+  <div class="mySlides fade">
+    <div class="image-container">
+      <img src="Photo_fond2.jpeg" alt="Image 2">
+      <div class="overlay">
+        <div class="text">Description de l'image 2</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Troisième image -->
+  <div class="mySlides fade">
+    <div class="image-container">
+      <img src="Photo_fond3.jpeg" alt="Image 3">
+      <div class="overlay">
+        <div class="text">Description de l'image 3</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Script JavaScript pour le défilement automatique -->
+
+
+<!-- Script JavaScript pour le défilement automatique -->
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+</script>
+
     <!-- Contenu du header -->
     <div class="header-content">
       
@@ -69,178 +118,284 @@
   <!-- Fin du header -->
   
   <!-- Section principale -->
-  <section class="main">
-    <!-- Section Meilleures ventes -->
-    <section class="best-sellers">
+ 
+    <section>
       <h2>Meilleures ventes</h2>
-      <div class="best-sellers-grid">
-        <!-- Exemple de carte de produit -->
-        <div class="product-card">
-          <img src="Cerav.JPG" alt="Produit 1">
-          <div class="product-info">
-            <h3>Nom du produit 1</h3>
-            <p>Description du produit 1</p>
-            <p>Prix: 25€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
-          </div>
-        </div>
         
-        <!-- Répéter ce bloc pour chaque produit -->
-        <!-- Exemple d'autres cartes de produit -->
-        <div class="product-card">
-          <img src="y1.jpg" alt="Produit 2">
-          <div class="product-info">
-            <h3>Nom du produit 2</h3>
-            <p>Description du produit 2</p>
-            <p>Prix: 30€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
-          </div>
+    </div>
+    <div class="products">
+        <div class="row">
+            <img src="M1.jpg">
+            <div class="product-text"> 
+                <h5>Vente</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Lotion hydratante</h4>
+            <h4 class="panier">Ajouter au panier</h4>
+            <p>9,60€</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="M2.jpg">
+            <div class="product-text"> 
+                <h5>Vente</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Anti-rugosité</h4>
+            <h4 class="panier">Ajouter au panier</h4>
+            <p>15,00€</p>
+            </div>
+           </div> 
+       
+       <div class="row">
+        <img src="M3.webp">
+        <div class="product-text"> 
+            <h5>-10%</h5>
         </div>
-        <div class="product-card">
-          <img src="B2.jpg" alt="Produit 3">
-          <div class="product-info">
-            <h3>Nom du produit 3</h3>
-            <p>Description du produit 3</p>
-            <p>Prix: 35€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
-          </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
         </div>
-        <div class="product-card">
-          <img src="GR1.JPG" alt="Produit 4">
-          <div class="product-info">
-            <h3>Nom du produit 4</h3>
-            <p>Description du produit 4</p>
-            <p>Prix: 40€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
-          </div>
+        <div class="ratting">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
         </div>
+        <div>
+        <h4>Lait hydratant</h4>
+        <h4 class="panier">Ajouter au panier</h4>
+        <p>25,15€</p>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="M4.jpg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Crème hydratante</h4>
+        <h4 class="panier">Ajouter au panier</h4>
+        <p>30,45€</p>
+        </div>
+       </div> 
+      </section>
+      <section>
+        <h2>Nouveautés</h2>
+          
       </div>
-    </section>
-    <!-- Fin de la section Meilleures ventes -->
-    
-    <!-- Section Saison -->
-    <section class="Nouveautés">
-      <h2>Nouveautés</h2>
-      <div class="seasons-grid">
-        <!-- Exemple de carte de saison -->
-        <div class="season-card">
-          <img src="ro1.png" alt="Printemps">
-          <h3>Nom du produit 4</h3>
-          <p>Description du produit 3</p>
-            <p>Prix: 35€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
-
-          <div class="season-info">
-            <h3></h3>
+      <div class="products">
+          <div class="row">
+              <img src="M1.jpg">
+              <div class="product-text"> 
+                  <h5>Vente</h5>
+              </div>
+              <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="ratting">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div>
+              <h4>Lotion hydratante</h4>
+              <h4 class="panier">Ajouter au panier</h4>
+              <p>9,60€</p>
+              </div>
+             </div> 
+             <div class="row">
+              <img src="M2.jpg">
+              <div class="product-text"> 
+                  <h5>Vente</h5>
+              </div>
+              <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="ratting">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div>
+              <h4>Anti-rugosité</h4>
+              <h4 class="panier">Ajouter au panier</h4>
+              <p>15,00€</p>
+              </div>
+             </div> 
+         
+         <div class="row">
+          <img src="M3.webp">
+          <div class="product-text"> 
+              <h5>-10%</h5>
           </div>
-        </div>
-        <!-- Répéter ce bloc pour chaque saison -->
-        <!-- Exemple d'autres cartes de saison -->
-        <div class="season-card">
-          <img src="y2.jpg" alt="Été">
-          <div class="season-info">
-            <h3>Nom du produit 4</h3>
-          <p>Description du produit 3</p>
-            <p>Prix: 35€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
-
-            <h3></h3>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
           </div>
-        </div>
-        <div class="season-card">
-          <img src="Cor2.JPG" alt="Automne">
-          <div class="season-info">
-            <h3>Nom du produit 4</h3>
-          <p>Description du produit 3</p>
-            <p>Prix: 35€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
-
-            <h3></h3>
+          <div class="ratting">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
           </div>
-        </div>
-        <div class="season-card">
-          <img src="Serum2.JPG" alt="Hiver">
-          <div class="season-info">
-            <h3>Nom du produit 4</h3>
-          <p>Description du produit 3</p>
-            <p>Prix: 35€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
-
-            <h3></h3>
+          <div>
+          <h4>Lait hydratant</h4>
+          <h4 class="panier">Ajouter au panier</h4>
+          <p>25,15€</p>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- Fin de la section Saison -->
-    
-    <!-- Section Top catégorie -->
-    <section class="top-categories">
-      <h2>Top catégories</h2>
-      <div class="top-categories-grid">
-        <!-- Exemple de carte de catégorie -->
-        <div class="category-card">
-          <img src="Cor2.JPG" alt="Lèvres">
-          <div class="category-info">
-            <h3>Nom du produit 4</h3>
-          <p>Description du produit 3</p>
-            <p>Prix: 35€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
-
+         </div> 
+         <div class="row">
+          <img src="M4.jpg">
+          <div class="product-text"> 
+              <h5>Vente</h5>
           </div>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ratting">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div>
+          <h4>Crème hydratante</h4>
+          <h4 class="panier">Ajouter au panier</h4>
+          <p>30,45€</p>
+          </div>
+         </div> 
+        </section>
+        <section>
+          <h2>Top catégories</h2>
+            
         </div>
-        <!-- Répéter ce bloc pour chaque catégorie -->
-        <!-- Exemple d'autres cartes de catégorie -->
-        <div class="category-card">
-          <img src="Cor3.JPG" alt="Yeux">
-          <div class="category-info">
-            <h3>Nom du produit 4</h3>
-          <p>Description du produit 3</p>
-            <p>Prix: 35€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
+        <div class="products">
+            <div class="row">
+                <img src="M1.jpg">
+                <div class="product-text"> 
+                    <h5>Vente</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="ratting">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div>
+                <h4>Lotion hydratante</h4>
+                <h4 class="panier">Ajouter au panier</h4>
+                <p>9,60€</p>
+                </div>
+               </div> 
+               <div class="row">
+                <img src="M2.jpg">
+                <div class="product-text"> 
+                    <h5>Vente</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="ratting">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div>
+                <h4>Anti-rugosité</h4>
+                <h4 class="panier">Ajouter au panier</h4>
+                <p>15,00€</p>
+                </div>
+               </div> 
            
-          </div>
-        </div>
-        <div class="category-card">
-          <img src="COR1.JPG" alt="Visage">
-          <div class="category-info">
-            <h3>Nom du produit 4</h3>
-          <p>Description du produit 3</p>
-            <p>Prix: 35€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
+           <div class="row">
+            <img src="M3.webp">
+            <div class="product-text"> 
+                <h5>-10%</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Lait hydratant</h4>
+            <h4 class="panier">Ajouter au panier</h4>
+            <p>25,15€</p>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="M4.jpg">
+            <div class="product-text"> 
+                <h5>Vente</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Crème hydratante</h4>
+            <h4 class="panier">Ajouter au panier</h4>
+            <p>30,45€</p>
+            </div>
+           </div> 
+          </section>
 
-          </div>
-        </div>
-        <div class="category-card">
-          <img src="Cor2.JPG" alt="Soin de peau">
-          <div class="category-info">
-           <h3>Nom du produit 4</h3>
-          <p>Description du produit 3</p>
-            <p>Prix: 35€</p>
-            <button>Ajouter au panier</button>
-            <button>Ajouter aux favoris</button>
+     
+       
 
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Fin de la section Top catégorie -->
-    
-    
-  </section>
-
-  <!-- Fin de la section principale -->
-  
   <!-- Pied de page -->
 <footer class="footer">
   <div class="footer-inner">
@@ -334,5 +489,3 @@
 </script>
 </body>
 </html>
-
-

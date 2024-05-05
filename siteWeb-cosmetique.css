@@ -1,348 +1,424 @@
-@import url('https://fonts.googleapis.com/css2?family=YourKikoFont&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=YourKikoFont&display=swap'); 
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'YourKikoFont', sans-serif; /* Utiliser la police Kiko */
-  background-color: #FFF;
-}
-h1, h2, h3, p {
-  color: #333333;
-}
-/* Styles pour les titres importants */
-h1, h2 {
-  color: #D81B60; /* Couleur rose vif */
-  text-transform: uppercase; /* Mettre en majuscules */
-  text-align: center; /* Centrer le texte */
-  margin-bottom: 20px; /* Ajouter un espacement en bas */
-}
-
-/* Style pour le titre de la barre de navigation */
-nav h1 {
-  font-size: 24px; /* Augmenter la taille du titre */
-}
-
-/* Style pour les titres de section */
-section h2 {
-  font-size: 30px; /* Augmenter la taille du titre */
-}
-
-/* Style pour les titres des cartes de produit, saison et catégorie */
-.product-info h3,
-.season-info h3,
-.category-info h3 {
-  font-size: 25px; /* Augmenter la taille du titre */
-  margin-bottom: 10px; /* Ajouter un espacement en bas */
-}
-
-
-/* Styles pour la barre de navigation */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #F2F2F2; /* Couleur de fond de la barre de navigation */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.nav-hidden {
-  top: -100px;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-}
-
-nav h1 {
-  font-size: 20px;
-  color:  #333333;
-}
-
-nav .onglets {
-  display: flex;
-  align-items: center;
-}
-
-nav .onglets p {
-  font-size: 17px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-nav .onglets input {
-  margin: 8px 20px;
-  padding: 15px;
-  border-radius: 30px;
-  border: none;
-  background-color: lightgray;
-  outline: none;
-}
-
-/* Styles pour la vidéo en arrière-plan */
-.background-video {
-  position: relative; /* Modifier la position en relative */
-  width: 100%;
-  height: 100vh; /* Utiliser la hauteur de la vue */
-  object-fit: cover;
-  z-index: -1;
-}
-
-.header-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-
-/* Styles pour les sections */
-section {
-  padding: 50px 0;
-}
-
-section h2 {
-  text-align: center;
-  color:  #333333;
-}
-
-/* Styles pour les grilles de produits, saisons et catégories */
-.best-sellers-grid,
-.seasons-grid,
-.top-categories-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-  justify-content: center;
-}
-
-/* Styles pour les cartes de produits, saisons et catégories */
-.product-card,
-.season-card,
-.category-card {
-  background-color: #FFF;
-  border: 1px solid #EAE7DD;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.product-card img,
-.season-card img,
-.category-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.product-info,
-.season-info,
-.category-info {
-  padding: 20px;
-}
-
-/* Styles pour les boutons */
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background-color:#D81B60;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #d81b60;
-}
-
-/* Styles pour le pied de page */
-.footer {
-  background-color: #111;
-  color: #fff;
-  padding: 30px 0;
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer-section {
-  flex: 1 1 200px;
-  margin-bottom: 20px;
-}
-
-.footer-heading {
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-
-.footer-list {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-list li {
-  margin-bottom: 10px;
-}
-
-.footer-list li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.social-icons {
-  display: flex;
-}
-
-.social-icons li {
-  margin-right: 10px;
-}
-
-.social-icons li:last-child {
-  margin-right: 0;
-}
-
-.social-icons li a {
-  color: #fff;
-  font-size: 16px;
-}
-
-.footer-bottom {
-  border-top: 1px solid #444;
-  padding-top: 20px;
-}
-
-.footer-legal {
-  text-align: center;
-}
-
-.legal-links {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-}
-
-.legal-links li {
-  display: inline;
-  margin-right: 10px;
-}
-
-.legal-links li:last-child {
-  margin-right: 0;
-}
-
-.legal-links li a {
-  color: #ccc;
-  text-decoration: none;
-}
-
-
-/* Media query pour les écrans plus petits */
-@media screen and (max-width: 640px) {
-  nav .onglets .link,
-  nav h1 {
-    display: none;
-  }
-}
-
-/* Styles pour la fenêtre modale */
-.modal {
-  display: none; /* Masquer la fenêtre modale par défaut */
-  position: fixed; /* Position fixe pour couvrir l'écran */
-  z-index: 1000; /* Mettre la fenêtre modale au-dessus de tout le reste */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
-  overflow: auto; /* Activer le défilement si nécessaire */
-  backdrop-filter: blur(5px);  /* flou de fond */
-}
-
-.modal-content {
-  background-color: #ffffff;
-  margin: 10% auto; /* Centrer la fenêtre modale */
-  margin-left: 50%;
-  margin-right: 2%;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'YourKikoFont', sans-serif; /* Utiliser la police Kiko */
+      background-color: #F2F2F2;
+    }
+    h1, h2, h3, p {
+      color: #333333;
+    }
+    /* Styles pour les titres importants */
+    h1, h2 {
+      color: #D81B60; /* Couleur rose vif */
+      text-transform: uppercase; /* Mettre en majuscules */
+      text-align: center; /* Centrer le texte */
+      margin-bottom: 20px; /* Ajouter un espacement en bas */
+    }
+    
+    /* Style pour le titre de la barre de navigation */
+    nav h1 {
+      font-size: 24px; /* Augmenter la taille du titre */
+    }
+    
+    /* Style pour les titres de section */
+    section h2 {
+      font-size: 30px; /* Augmenter la taille du titre */
+    }
+    
+    /* Style pour les titres des cartes de produit, saison et catégorie */
+    .product-info h3,
+    .season-info h3,
+    .category-info h3 {
+      font-size: 25px; /* Augmenter la taille du titre */
+      margin-bottom: 10px; /* Ajouter un espacement en bas */
+    }
+    
+    
+    /* Styles pour la barre de navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 0px;
+      background-color: #F2F2F2; /* Couleur de fond de la barre de navigation */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-hidden {
+      top: -100px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: black;
+    }
+    
+    nav h1 {
+      font-size: 20px;
+      color:  #333333;
+    }
+    
+    nav .onglets {
+      display: flex;
+      align-items: center;
+    }
+    
+    nav .onglets p {
+      font-size: 17px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    
+    nav .onglets input {
+      margin: 8px 20px;
+      padding: 15px;
+      border-radius: 30px;
+      border: none;
+      background-color: lightgray;
+      outline: none;
+    }
+    
+    /* Styles pour la vidéo en arrière-plan */
   
-  padding: 20px;
-  border: none;
-  border-radius: 10px;
-  max-width: 500px; /* Largeur maximale de la fenêtre modale */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajustez la hauteur en fonction de vos images */
+    overflow: hidden;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.8s ease;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 30%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.5); /* Fond flou de l'image */
+    backdrop-filter: blur(50px); /* Effet de flou */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ajout d'une ombre */
+     border-top-left-radius: 10px; /* Coins arrondis pour l'overlay */
+    border-bottom-left-radius: 10px; /* Coins arrondis pour l'overlay */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .text {
+    color: black;
+    font-size: 20px;
+  }
+
+
+    
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+    
+    /* Styles pour les sections */
+    section {
+      padding: 50px 0;
+    }
+    
+    section h2 {
+      text-align: center;
+      color:  #333333;
+    }
+    section h2 {
+  text-align: center;
 }
 
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
+   
+    
+    .products{
+         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+        gap: 2rem;
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-}
-
-/* Styles pour le formulaire de connexion */
-#login-form {
-  display: block;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#login-form h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-#login-form label {
-  display: block;
-  margin-bottom: 10px;
-  color: #555;
-}
-
-#login-form input[type="email"],
-#login-form input[type="password"] {
-  width: calc(100% - 24px);
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-#login-form input[type="email"]:focus,
-#login-form input[type="password"]:focus {
-  border-color: #D81B60;
-}
-
-#login-form button[type="submit"] {
-  width: 100%;
-  padding: 12px;
-  background-color: #D81B60;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#login-form button[type="submit"]:hover {
-  background-color: #C21850;
-}
-
+         }
+         .row {
+            
+            position: relative;
+            transition: all .40s;
+        }
+        .row img {
+            width: 100%;
+            height: auto;
+            transition: all .40s;
+        }
+        .row img:hover{
+            transform: scale(0.9);
+        }
+        .product-text h5{
+            position: absolute;
+            top: 13px;
+            left: 13px;
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color:#EE1C47;
+            padding: 3px 10px;
+            border-radius: 2px;
+        }  
+        .heart-icon{
+            position: absolute;
+            right: 0;
+            font-size: 20px;
+        }
+        .heart-icon:hover{
+            color: #EE1C47;
+        }
+        .ratting i{
+            color: #FF8C00;
+            font-size: 18px;
+        }
+        .price h4{
+            color: #111;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+        .panier {
+          top: 13px;
+            left: 13px;
+            color: black;
+            font-size: 12px;
+            font-weight: 500;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: #EE1C47;
+    border-radius: 10px;
+    }
+    .panier:hover{
+            background-color:#FF8C00;
+            color:white;
+            border: 1px solid #FF8C00;
+        }
+    
+    .product-info,
+    .season-info,
+    .category-info {
+      padding: 20px;
+    }
+    
+    /* Styles pour les boutons */
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color:#D81B60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #d81b60;
+    }
+    
+    /* Styles pour le pied de page */
+    .footer {
+      background-color: #111;
+      color: #fff;
+      padding: 30px 0;
+    }
+    
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    .footer-section {
+      flex: 1 1 200px;
+      margin-bottom: 20px;
+    }
+    
+    .footer-heading {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    
+    .footer-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-list li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-list li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .social-icons {
+      display: flex;
+    }
+    
+    .social-icons li {
+      margin-right: 10px;
+    }
+    
+    .social-icons li:last-child {
+      margin-right: 0;
+    }
+    
+    .social-icons li a {
+      color: #fff;
+      font-size: 16px;
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid #444;
+      padding-top: 20px;
+    }
+    
+    .footer-legal {
+      text-align: center;
+    }
+    
+    .legal-links {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+    
+    .legal-links li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    .legal-links li:last-child {
+      margin-right: 0;
+    }
+    
+    .legal-links li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    
+    
+    /* Media query pour les écrans plus petits */
+    @media screen and (max-width: 640px) {
+      nav .onglets .link,
+      nav h1 {
+        display: none;
+      }
+    }
+    
+    /* Styles pour la fenêtre modale */
+    .modal {
+      display: none; /* Masquer la fenêtre modale par défaut */
+      position: fixed; /* Position fixe pour couvrir l'écran */
+      z-index: 1000; /* Mettre la fenêtre modale au-dessus de tout le reste */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+      overflow: auto; /* Activer le défilement si nécessaire */
+      backdrop-filter: blur(5px);  /* flou de fond */
+    }
+    
+    .modal-content {
+      background-color: #ffffff;
+      margin: 10% auto; /* Centrer la fenêtre modale */
+      margin-left: 50%;
+      margin-right: 2%;
+      
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      max-width: 500px; /* Largeur maximale de la fenêtre modale */
+    }
+    
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+    }
+    
+    /* Styles pour le formulaire de connexion */
+    #login-form {
+      display: block;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #login-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    #login-form label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    
+    #login-form input[type="email"],
+    #login-form input[type="password"] {
+      width: calc(100% - 24px);
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    #login-form input[type="email"]:focus,
+    #login-form input[type="password"]:focus {
+      border-color: #D81B60;
+    }
+    
+    #login-form button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #D81B60;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    #login-form button[type="submit"]:hover {
+      background-color: #C21850;
 
 
 
