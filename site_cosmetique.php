@@ -10,14 +10,16 @@
   <script src="https://kit.fontawesome.com/8ddecbbdca.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Barre de navigation -->
+  <!-- Barre de navigation principal -->
   <nav>
     <h1>DERMAFLORE</h1>
     <div class="onglets">
-      <p class="link"><a href="Sérums.html">Sérum</a></p>
+      <p class="link"><a href="Marques.html">Marques</a>
+      <p class="link"><a href="Sérums.html">Sérums</a></p>
       <p class="link"><a href="Crème.html">Crèmes</a></p>
       <p class="link"><a href="Nettoyants.html">Nettoyants</a></p>
       <p class="link"><a href="Conseils.html">Conseils</a></p>
+
       <form>
         <input type="search" placeholder="Rechercher">
       </form>
@@ -26,7 +28,14 @@
       <p id="open-modal"><i class="fas fa-user"></i></p>
     </div>
   </nav>
-  <!-- Fin de la barre de navigation -->
+  <!-- Fin de la barre de navigation  principal-->
+  <!-- Deuxième barre de navigation -->
+<div class="second-navbar">
+    <a href="second-link">MAGAZINS</a>
+    <a href="third-link">AIDE</a>
+    <a href="">FR | FR</a>
+     <img class="navbar-logo" src="Drapeau_logo.jpeg" alt="Logo de la France">
+</div>
   
   <!-- Fenêtre modale -->
   <div id="modal" class="modal">
@@ -60,7 +69,7 @@
   <!-- Première image -->
   <div class="mySlides fade">
     <div class="image-container">
-      <img src="Photo_fond1.jpeg" alt="Image 1">
+      <img src="neauthy-skincare-8ZKwW-2SR28-unsplash.jpg" alt="Image 1">
       <div class="overlay">
         <div class="text">Description de l'image 1</div>
       </div>
@@ -70,7 +79,7 @@
   <!-- Deuxième image -->
   <div class="mySlides fade">
     <div class="image-container">
-      <img src="Photo_fond2.jpeg" alt="Image 2">
+      <img src="irene-kredenets-JleKjX_A5Xg-unsplash.jpg" alt="Image 2">
       <div class="overlay">
         <div class="text">Description de l'image 2</div>
       </div>
@@ -80,17 +89,13 @@
   <!-- Troisième image -->
   <div class="mySlides fade">
     <div class="image-container">
-      <img src="Photo_fond3.jpeg" alt="Image 3">
+      <img src="michela-ampolo-7tDGb3HrITg-unsplash.jpg" alt="Image 3">
       <div class="overlay">
         <div class="text">Description de l'image 3</div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- Script JavaScript pour le défilement automatique -->
-
-
 <!-- Script JavaScript pour le défilement automatique -->
 <script>
   var slideIndex = 0;
