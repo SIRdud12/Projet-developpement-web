@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -777,4 +778,785 @@
         </body>
         </html>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8ddecbbdca.js" crossorigin="anonymous"></script>
+    <style>
+         body {
+      margin: 0;
+      padding: 0;
+      font-family: 'YourKikoFont', sans-serif; /* Utiliser la police Kiko */
+      background-color: white;
+    }
+    h1, h2, h3, p {
+      color: #333333;
+    }
+    /* Styles pour les titres importants */
+    h1, h2,h3 {
+       /* Couleur rose vif */
+      text-transform: uppercase; /* Mettre en majuscules */
+      text-align: center; /* Centrer le texte */
+      margin-bottom: 20px; /* Ajouter un espacement en bas */
+    }
+    
+    /* Style pour le titre de la barre de navigation */
+    nav h1 {
+      font-size: 24px; /* Augmenter la taille du titre */
+    }
+    
+    /* Style pour les titres de section */
+    section h2 {
+      font-size: 30px; /* Augmenter la taille du titre */
+    }
+    
+    /* Style pour les titres des cartes de produit, saison et catégorie */
+    .product-info h3,
+    .season-info h3,
+    .category-info h3 {
+      font-size: 25px; /* Augmenter la taille du titre */
+      margin-bottom: 10px; /* Ajouter un espacement en bas */
+    }
+    
+    
+    /* Styles pour la barre de navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 0px;
+      background-color: #F2F2F2; /* Couleur de fond de la barre de navigation */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    }
+    
+    .nav-hidden {
+      top: -100px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: black;
+    }
+    nav h1 {
+      font-size: 20px;
+      color:  #333333;
+    }
+    
+    nav .onglets {
+      display: flex;
+      align-items: center;
+    }
+    
+    nav .onglets p {
+      font-size: 17px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    
+    nav .onglets input {
+      margin: 8px 20px;
+      padding: 15px;
+      border-radius: 30px;
+      border: none;
+      background-color: lightgray;
+      outline: none;
+    }
+    .second-navbar {
+            background-color: #555;
+            overflow: hidden;
+
+        }
+
+
+        .second-navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 5px 12px;
+            text-decoration: none;
+
+
+        }
+
+        .second-navbar a:hover {
+            background-color: #ddd;
+            color: black;
+
+        }
+        .navbar-logo {
+            height: 30px;
+            margin-top: 6px;
+            margin-left: 10px;
+            background-color:  #f2f2f2;
+        }
+
+
+    /**{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }*/
+    
+   .slider-wrapper .image-list{
+   display: grid;
+   gap: 18px;
+   grid-template-columns: repeat(10,1fr);
+   }
+    
+    /* Styles pour la vidéo en arrière-plan 
+    .background-video {
+      position: relative; /* Modifier la position en relative 
+      width: 100%;
+      height: 100vh; /* 
+      object-fit: cover;
+      z-index: -1;
+    }
+    
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+    
+    /* Styles pour les sections */
+        body{
+            background-color: white;
+        }
+      .container {
+        width: 90%;
+        padding: 20px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+      }
+      .box{
+        width: 250px;
+        margin: 0 10px;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+      }
+      .box img{
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+      }
+      .box:hover{
+        transform: scale(1.3);
+        z-index: 2;
+      }
+      span{
+        color:#C21850 ;
+      }
+      .products{
+         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+        gap: 2rem;
+      }
+      .row {
+            
+            position: relative;
+            transition: all .40s;
+        }
+        .row img {
+            width: 100%;
+            height: auto;
+            transition: all .40s;
+        }
+        .row img:hover{
+            transform: scale(0.9);
+        }
+        .product-text h5{
+            position: absolute;
+            top: 13px;
+            left: 13px;
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color:#EE1C47 ;
+            padding: 3px 10px;
+            border-radius: 2px;
+        }  
+      .ratting i{
+            color: #FF8C00;
+            font-size: 18px;
+        }
+        .heart-icon{
+            position: absolute;
+            right: 0;
+            font-size: 20px;
+        }
+        .heart-icon:hover{
+            color: #EE1C47;
+        }
+        .ratting i{
+            color: c;
+            font-size: 18px;
+        }
+        .panier {
+          top: 13px;
+            left: 13px;
+              text-align: center;
+            color: black;
+            font-size: 17px;
+            font-weight: 500;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: #EE1C47;
+    border-radius: 10px;
+    }
+    .panier:hover{
+            background-color:#FF8C00;
+            color:white;
+            border: 1px solid #FF8C00;
+        }
+
+      .footer {
+      background-color: #111;
+      color: #fff;
+      padding: 30px 0;
+    }
+    
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    .footer-section {
+      flex: 1 1 200px;
+      margin-bottom: 20px;
+    }
+    
+    .footer-heading {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    
+    .footer-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-list li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-list li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .social-icons {
+      display: flex;
+    }
+    
+    .social-icons li {
+      margin-right: 10px;
+    }
+    
+    .social-icons li:last-child {
+      margin-right: 0;
+    }
+    
+    .social-icons li a {
+      color: #fff;
+      font-size: 16px;
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid #444;
+      padding-top: 20px;
+    }
+    
+    .footer-legal {
+      text-align: center;
+    }
+    
+    /* Styles pour les boutons */
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color:#D81B60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #d81b60;
+    }
+    
+    /* Styles pour le pied de page */
+    .footer {
+      background-color: #111;
+      color: #fff;
+      padding: 30px 0;
+    }
+    
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    .footer-section {
+      flex: 1 1 200px;
+      margin-bottom: 20px;
+    }
+    
+    .footer-heading {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    
+    .footer-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-list li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-list li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .social-icons {
+      display: flex;
+    }
+    
+    .social-icons li {
+      margin-right: 10px;
+    }
+    
+    .social-icons li:last-child {
+      margin-right: 0;
+    }
+    
+    .social-icons li a {
+      color: #fff;
+      font-size: 16px;
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid #444;
+      padding-top: 20px;
+    }
+    
+    .footer-legal {
+      text-align: center;
+    }
+    
+    .legal-links {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+    
+    .legal-links li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    .legal-links li:last-child {
+      margin-right: 0;
+    }
+    
+    .legal-links li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    
+    
+    /* Media query pour les écrans plus petits */
+    @media screen and (max-width: 640px) {
+      nav .onglets .link,
+      nav h1 {
+        display: none;
+      }
+    }
+    
+    /* Styles pour la fenêtre modale */
+    .modal {
+      display: none; /* Masquer la fenêtre modale par défaut */
+      position: fixed; /* Position fixe pour couvrir l'écran */
+      z-index: 1000; /* Mettre la fenêtre modale au-dessus de tout le reste */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+      overflow: auto; /* Activer le défilement si nécessaire */
+      backdrop-filter: blur(5px);  /* flou de fond */
+    }
+    
+    .modal-content {
+      background-color: #ffffff;
+      margin: 10% auto; /* Centrer la fenêtre modale */
+      margin-left: 50%;
+      margin-right: 2%;
+      
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      max-width: 500px; /* Largeur maximale de la fenêtre modale */
+    }
+    
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+    }
+    
+    /* Styles pour le formulaire de connexion */
+    #login-form {
+      display: block;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #login-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    #login-form label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    
+    #login-form input[type="email"],
+    #login-form input[type="password"] {
+      width: calc(100% - 24px);
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    #login-form input[type="email"]:focus,
+    #login-form input[type="password"]:focus {
+      border-color: #D81B60;
+    }
+    
+    #login-form button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #D81B60;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    #login-form button[type="submit"]:hover {
+      background-color: #C21850;
+    }
+    .prix{
+      color:#C21850;
+      font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1><p class="link"><a href="site_cosmetique.php">DERMAFLORE</a></p></h1>
+        <div class="onglets">
+          <p class="link"><a href="Marques.html">Marques</a></p>
+          <p class="link"><a href="Sérums.html">Sérum</a></p>
+          <p class="link"><a href="Crème.html">Crèmes</a></p>
+          <p class="link"><a href="Nettoyants.html">Nettoyants</a></p>
+          <p class="link"><a href="Conseils.html">Conseils</a></p>
+
+          <form>
+            <input type="search" placeholder="Rechercher">
+          </form>
+          <p><i class="far fa-heart"></i></p>
+           <p><a href="Panier.html"><i class="fas fa-shopping-cart"></i></a></p>
+          <p id="open-modal"><i class="fas fa-user"></i></p>
+        </div>
+      </nav>
+      <!-- Fin de la barre de navigation -->
+      <div class="second-navbar">
+        <a href="second-link">MAGAZINS</a>
+        <a href="third-link">AIDE</a>
+        <a href="">FR | FR</a>
+        
+    </div>
+    
+      <!-- Fenêtre modale -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!--formulaire de connexion ou d'inscription -->
+          <div id="login-form">
+            <h2>Se connecter</h2>
+            <form>
+              <label for="email">Adresse e-mail:</label><br>
+               <input type="email" id="email" name="email"><br>
+            <label for="password">Mot de passe:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <button type="submit">Se connecter</button>
+            </form>
+          </div>
+    
+          <!-- Section pour s'inscrire -->
+        <div id="signup-section">
+          <h2>Vous n'avez pas de compte?</h2>
+          <p>Inscrivez-vous dès maintenant!</p>
+          <button id="signup-button">S'inscrire</button>
+        </div>
+    
+        </div>
+      </div>
+      <!-- Fin de la fenêtre modale -->
+      <section>
+      <h2>Nos <span>Marques</span></h2>
+    <div class="container">
+        <div class="box">
+            <img src="Cerave.jpg" alt="">
+            <h3>Cerave</h3>
+        </div>
+        <div class="box">
+            <img src="Garnier.jpg" alt="">
+             <h3>Roche Posay</h3>
+        </div>
+        <div class="box">
+            <img src="ordi.jpg" alt="">
+            <h3>The Ordinary</h3>
+        </div>
+        <div class="box">
+            <img src="POSAY.jpg" alt="">
+            <h3 class="blanc">Roche Posay</h3>
+        </div>
+        <div class="box">
+            <img src="beauty.jpg" alt="">
+            <h3>Beauty of JOSEON</h3>
+        </div>
+    </div>
+  </section>
+    <section>
+      <div class="center-text">
+          <h3>Découvrez la gamme complète de<span> toutes nos marques</span></h3>
+      </div>
+      <div class="products">
+          <div class="row">
+              <img src="CRR.jpg">
+              <div class="product-text"> 
+                  <h5>Vente</h5>
+              </div>
+              <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div>
+              <h4>Lotion hydratante</h4>
+              <p class="prix">9,60€</p>
+              <h4 class="panier">Ajouter au panier</h4>
+              </div>
+             </div> 
+             <div class="row">
+              <img src="Rochep.jpg">
+              <div class="product-text"> 
+                  <h5>Vente</h5>
+              </div>
+              <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div>
+              <h4>Anti-rugosité</h4>
+              <p class="prix">15,00€</p>
+              <h4 class="panier">Ajouter au panier</h4>
+              </div>
+             </div> 
+         
+         <div class="row">
+          <img src="N2.jpg">
+          <div class="product-text"> 
+              <h5>-10%</h5>
+          </div>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div>
+          <h4>Lait hydratant</h4>
+          <p class="prix">25,15€</p>
+          <h4 class="panier">Ajouter au panier</h4>
+          </div>
+         </div> 
+        
+         <div class="row">
+          <img src="thia.jpg">
+          <div class="product-text"> 
+              <h5>-20%</h5>
+          </div>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+              <div>
+                  <h4>Crème repatrice</h4>
+                  <p class="prix">85,70€</p>
+                  <h4 class="panier">Ajouter au panier</h4>
+                  </div>
+  
+          </div>
+         </div> 
+        
+        </section>
+    <section>
+       
+        <footer class="footer">
+          <div class="footer-inner">
+            <div class="footer-section">
+              <h4 class="footer-heading">Service client</h4>
+              <ul class="footer-list">
+                <li><a href="#">Aide</a></li>
+                <li><a href="#">Suivi de commande</a></li>
+                <li><a href="#">Retours</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4 class="footer-heading">À propos de Dermaflore</h4>
+              <ul class="footer-list">
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Investisseurs</a></li>
+                <li><a href="#">Carrières</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4 class="footer-heading">Plus de Dermaflore</h4>
+              <ul class="footer-list">
+                <li><a href="#">Cartes cadeaux</a></li>
+                <li><a href="#">Rechercher un magasin</a></li>
+                <li><a href="#">Bulletin</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4 class="footer-heading">Nous suivre</h4>
+              <ul class="footer-list social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-legal">
+              <p>&copy; 2024 G R I M G A R. Tous droits réservés.</p>
+              <ul class="legal-links">
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Politique relative aux cookies</a></li>
+                <li><a href="#">Droit d'auteur</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        </section>
+        
+        
+        
+        
+          <!-- Fin du pied de page -->
+        <script>
+          let lastScrollTop = 0;
+          const navbar = document.querySelector('nav');
+        
+          window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+            if (scrollTop > lastScrollTop) {
+              // Faites défiler vers le bas
+              navbar.classList.add('nav-hidden');
+            } else {
+              // Faites défiler vers le haut
+              navbar.classList.remove('nav-hidden');
+            }
+        
+            lastScrollTop = scrollTop;
+          });
+        
+          // Fonction pour ouvrir la fenêtre modale
+          document.getElementById('open-modal').onclick = function() {
+            document.getElementById('modal').style.display = "block";
+          }
+        
+          // Fonction pour fermer la fenêtre modale en cliquant sur le bouton "X"
+          document.getElementsByClassName('close')[0].onclick = function() {
+            document.getElementById('modal').style.display = "none";
+          }
+        
+          // Fonction pour fermer la fenêtre modale en cliquant en dehors de celle-ci
+          window.onclick = function(event) {
+            if (event.target == document.getElementById('modal')) {
+              document.getElementById('modal').style.display = "none";
+            }
+          }
+        </script>
+        </body>
+        </html>
+</body>
+>>>>>>> 03fbc5af144a782f8355f62dbf8a3c8721e54d3c
 </html>
