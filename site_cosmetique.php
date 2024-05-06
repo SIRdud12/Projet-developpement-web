@@ -12,7 +12,7 @@
 <body>
   <!-- Barre de navigation principal -->
   <nav>
-    <h1>DERMAFLORE</h1>
+      <h1><p class="link"><a href="site_cosmetique.php">DERMAFLORE</a></p></h1>
     <div class="onglets">
       <p class="link"><a href="Marques.html">Marques</a>
       <p class="link"><a href="Sérums.html">Sérums</a></p>
@@ -20,10 +20,10 @@
       <p class="link"><a href="Nettoyants.html">Nettoyants</a></p>
       <p class="link"><a href="Conseils.html">Conseils</a></p>
 
-
-
       <form>
+        <input type="search" placeholder="Rechercher">
       </form>
+
       <p><i class="far fa-heart"></i></p>
      
         <p><a href="Panier.html"><i class="fas fa-shopping-cart"></i></a></p>
@@ -138,86 +138,90 @@
         <div class="row">
             <img src="M1.jpg">
             <div class="product-text"> 
-                <h5>Vente</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-            </div>
+                  <h5>Vente</h5>
+          </div>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
             <div>
             <h4>Lotion hydratante</h4>
-            <h4 class="panier">Ajouter au panier</h4>
             <p>9,60€</p>
+            <h4 class="panier">Ajouter au panier</h4>
+            
             </div>
            </div> 
            <div class="row">
             <img src="M2.jpg">
             <div class="product-text"> 
-                <h5>Vente</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-            </div>
+                <h5>-10%</h5>
+          </div>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
             <div>
             <h4>Anti-rugosité</h4>
+             <p>15,00€</p>
             <h4 class="panier">Ajouter au panier</h4>
-            <p>15,00€</p>
+           
             </div>
            </div> 
        
        <div class="row">
         <img src="M3.webp">
         <div class="product-text"> 
-            <h5>-10%</h5>
-        </div>
-        <div class="heart-icon">
-            <i class="fa-regular fa-heart"></i>
-        </div>
-        <div class="ratting">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
+              <h5>-40%</h5>
+          </div>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star-half-stroke"></i>
-        </div>
+          </div>
         <div>
         <h4>Lait hydratant</h4>
+          <p>25,15€</p>
         <h4 class="panier">Ajouter au panier</h4>
-        <p>25,15€</p>
+      
         </div>
        </div> 
        <div class="row">
         <img src="M4.jpg">
         <div class="product-text"> 
-            <h5>Vente</h5>
-        </div>
-        <div class="heart-icon">
-            <i class="fa-regular fa-heart"></i>
-        </div>
-        <div class="ratting">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-solid fa-star-half-stroke"></i>
-        </div>
+             <h5>Vente</h5>
+              </div>
+              <div class="heart-icon">
+                  <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
         <div>
         <h4>Crème hydratante</h4>
+         <p>30,45€</p>
         <h4 class="panier">Ajouter au panier</h4>
-        <p>30,45€</p>
+       
         </div>
        </div> 
       </section>
@@ -242,22 +246,23 @@
           <div class="row">
               <img src="M1.jpg">
               <div class="product-text"> 
-                  <h5>Vente</h5>
+               <h5>Vente</h5>
               </div>
               <div class="heart-icon">
                   <i class="fa-regular fa-heart"></i>
               </div>
               <div class="ratting">
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
               </div>
               <div>
               <h4>Lotion hydratante</h4>
+               <p>9,60€</p>
               <h4 class="panier">Ajouter au panier</h4>
-              <p>9,60€</p>
+             
               </div>
              </div> 
              <div class="row">
@@ -277,8 +282,9 @@
               </div>
               <div>
               <h4>Anti-rugosité</h4>
-              <h4 class="panier">Ajouter au panier</h4>
               <p>15,00€</p>
+              <h4 class="panier">Ajouter au panier</h4>
+              
               </div>
              </div> 
          
@@ -299,29 +305,31 @@
           </div>
           <div>
           <h4>Lait hydratant</h4>
-          <h4 class="panier">Ajouter au panier</h4>
           <p>25,15€</p>
+          <h4 class="panier">Ajouter au panier</h4>
+          
           </div>
          </div> 
          <div class="row">
           <img src="M4.jpg">
           <div class="product-text"> 
-              <h5>Vente</h5>
+                <h5>Vente</h5>
           </div>
           <div class="heart-icon">
               <i class="fa-regular fa-heart"></i>
           </div>
           <div class="ratting">
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
           </div>
           <div>
           <h4>Crème hydratante</h4>
+            <p>30,45€</p>
           <h4 class="panier">Ajouter au panier</h4>
-          <p>30,45€</p>
+        
           </div>
          </div> 
         </section>
@@ -333,86 +341,90 @@
             <div class="row">
                 <img src="M1.jpg">
                 <div class="product-text"> 
-                    <h5>Vente</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="ratting">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
+                      <h5>Vente</h5>
+          </div>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
                 <div>
                 <h4>Lotion hydratante</h4>
-                <h4 class="panier">Ajouter au panier</h4>
                 <p>9,60€</p>
+                <h4 class="panier">Ajouter au panier</h4>
+                
                 </div>
                </div> 
                <div class="row">
                 <img src="M2.jpg">
                 <div class="product-text"> 
                     <h5>Vente</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="ratting">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
+          </div>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
                 <div>
                 <h4>Anti-rugosité</h4>
+                 <p>15,00€</p>
                 <h4 class="panier">Ajouter au panier</h4>
-                <p>15,00€</p>
+               
                 </div>
                </div> 
            
            <div class="row">
             <img src="M3.webp">
             <div class="product-text"> 
-                <h5>-10%</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-            </div>
+                  <h5>Vente</h5>
+          </div>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
             <div>
             <h4>Lait hydratant</h4>
-            <h4 class="panier">Ajouter au panier</h4>
             <p>25,15€</p>
+            <h4 class="panier">Ajouter au panier</h4>
+            
             </div>
            </div> 
            <div class="row">
             <img src="M4.jpg">
             <div class="product-text"> 
-                <h5>Vente</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-            </div>
+                  <h5>Vente</h5>
+          </div>
+          <div class="heart-icon">
+              <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
             <div>
             <h4>Crème hydratante</h4>
+             <p>30,45€</p>
             <h4 class="panier">Ajouter au panier</h4>
-            <p>30,45€</p>
+           
             </div>
            </div> 
           </section>
