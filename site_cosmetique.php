@@ -20,11 +20,13 @@
       <p class="link"><a href="Nettoyants.html">Nettoyants</a></p>
       <p class="link"><a href="Conseils.html">Conseils</a></p>
 
+
+
       <form>
-        <input type="search" placeholder="Rechercher">
       </form>
       <p><i class="far fa-heart"></i></p>
-      <p><i class="fas fa-shopping-cart"></i></p>
+     
+        <p><a href="Panier.html"><i class="fas fa-shopping-cart"></i></a></p>
       <p id="open-modal"><i class="fas fa-user"></i></p>
     </div>
   </nav>
@@ -34,7 +36,7 @@
     <a href="second-link">MAGAZINS</a>
     <a href="third-link">AIDE</a>
     <a href="">FR | FR</a>
-     <img class="navbar-logo" src="Drapeau_logo.jpeg" alt="Logo de la France">
+    
 </div>
   
   <!-- Fenêtre modale -->
@@ -71,7 +73,11 @@
     <div class="image-container">
       <img src="neauthy-skincare-8ZKwW-2SR28-unsplash.jpg" alt="Image 1">
       <div class="overlay">
-        <div class="text">Description de l'image 1</div>
+        <div class="text">
+          <h1>NAUTHY skin care
+          </h1>
+          <p>Plongez dans l'univers de la beauté et de l'élégance. Découvrez le secret d'une peau éclatante et d'un teint resplendissant.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -79,7 +85,7 @@
   <!-- Deuxième image -->
   <div class="mySlides fade">
     <div class="image-container">
-      <img src="irene-kredenets-JleKjX_A5Xg-unsplash.jpg" alt="Image 2">
+      <img src="photo-1515377905703-c4788e51af15.webp" alt="Image 2">
       <div class="overlay">
         <div class="text">Description de l'image 2</div>
       </div>
@@ -91,7 +97,7 @@
     <div class="image-container">
       <img src="michela-ampolo-7tDGb3HrITg-unsplash.jpg" alt="Image 3">
       <div class="overlay">
-        <div class="text">Description de l'image 3</div>
+        <div class="text">Explorez le monde de la beauté avec notre collection exclusive de produits. Découvrez la quintessence du luxe et de l'élégance pour sublimer votre quotidien.</div>
       </div>
     </div>
   </div>
@@ -125,7 +131,7 @@
   <!-- Section principale -->
  
     <section>
-      <h2>Meilleures ventes</h2>
+      <h2>Meilleures <span>Ventes</span></h2>
         
     </div>
     <div class="products">
@@ -215,6 +221,19 @@
         </div>
        </div> 
       </section>
+
+
+       <section class="nouvelle-section">
+            <div class="section-content">
+                <div class="section-image">
+                    <img src="photo accueil.jpeg" alt="Image de la nouvelle section">
+                </div>
+                <div class="section-text">
+                    <h2>Susciter la joie de vivre et la confiance</h2>
+                    <p>KIKO MILANO est une marque qui a pour but de favoriser l'expression de soi. Nous nous saisissons des tendances mondiales et leur insufflons notre propre style, inspiré de nos racines italiennes, avant de les partager avec notre communeauté</p>
+                </div>
+            </div>
+        </section>
       <section>
         <h2>Nouveautés</h2>
           
@@ -307,7 +326,7 @@
          </div> 
         </section>
         <section>
-          <h2>Top catégories</h2>
+          <h2>Top <span>Catégories</span></h2>
             
         </div>
         <div class="products">
