@@ -12,7 +12,7 @@
 <body>
   <!-- Barre de navigation principal -->
   <nav>
-      <h1><p class="link"><a href="site_cosmetique.php">DERMAFLORE</a></p></h1>
+      <h1><p class="link"><a href="site_cosmetique.php">DERMAFLORE</a></p></h1>   
     <div class="onglets">
       <p class="link"><a href="Marques.html">Marques</a>
       <p class="link"><a href="Sérums.html">Sérums</a></p>
@@ -234,7 +234,7 @@
                 </div>
                 <div class="section-text">
                     <h2>Susciter la joie de vivre et la confiance</h2>
-                    <p>KIKO MILANO est une marque qui a pour but de favoriser l'expression de soi. Nous nous saisissons des tendances mondiales et leur insufflons notre propre style, inspiré de nos racines italiennes, avant de les partager avec notre communeauté</p>
+                    <p>DERMAFLORE est une marque qui a pour but de favoriser l'expression de soi. Nous nous saisissons des tendances mondiales et leur insufflons notre propre style, inspiré de nos racines italiennes, avant de les partager avec notre communeauté</p>
                 </div>
             </div>
         </section>
