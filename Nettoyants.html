@@ -1,240 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="test.css" /> 
-    <script src="https://kit.fontawesome.com/8ddecbbdca.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-    <style>
-        section{
-            padding: 5% 10%;
-        }
-        
-/* Styles pour la barre de navigation */
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 1px;
-  background-color: #DDD0C8; /* Couleur de fond de la barre de navigation */
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: top 0.3s;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Votre boutique G R I M G A R</title>
+  <link rel="stylesheet" href="Nettoyants.css">
+  <!-- Ajouter le lien vers la bibliothèque FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://kit.fontawesome.com/8ddecbbdca.js" crossorigin="anonymous"></script>
 
-.nav-hidden {
-  top: -100px;
-}
-
-nav a {
-text-decoration: none;
-color: black;
-}
-
-nav h1 {
-  font-size: 20px;
-}
-
-nav .onglets {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-nav .onglets p {
-  font-size: 17px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-nav .onglets input {
-  margin: 8px 20px;
-  padding: 15px;
-  border-radius: 30px;
-  border: none;
-  background-color: #f2f2f2;
-  outline: none;
-}
-    .main-home{ 
-        width: 100%;
-        height: 100vh;
-        background-image: url('https://e1.pxfuel.com/desktop-wallpaper/605/3/desktop-wallpaper-girl-black-white-african-african-woman.jpg');
-        background-position: center;
-        background-size: cover;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        }
-        .main-text h5{
-            color:#EE1C47;
-            font-size: 16px;
-            text-transform: capitalize;
-            font-weight: 500;
-        }
-         .main-text h1{
-            color: #000;
-            font-size: 65px;
-            text-transform: capitalize;
-            line-height: 1.1;
-            font-weight: 600;
-            margin: 6px 0 10px;
-
-         }
-         .main-text p{
-            color: #333c56;
-            font-size: 20px;
-            font-style: italic;
-            margin-bottom: 20px;
-         }
-         .main-btn{
-            display: inline-block;
-            color: #111;
-            font-size: 16px;
-            font-weight: 500;
-            text-transform: capitalize;
-            border: 2px solid #111;
-            padding: 12px 25px;
-            transition:all .42s ease;
-         }
-         .main-btn:hover{
-            background-color: #000;
-            color: #fff;
-         }
-         .main-btn i{
-            vertical-align: middle;
-         }
-         .down-arrow{
-            position:absolute;
-            top: 85%;
-            right: 11%;
-         }
-         .down-arrow i:hover{
-            font-size: 30px;
-            color: #2c2c2c;
-            border: 2px solid #2c2c2c;
-            border-radius: 50px;
-            padding: 12px 12px;
-         }
-         down i:hover{
-            background-color: #2c2c2c;
-            color: #fff;
-            transition: all .42s ease;
-         }
-         .center-text h2{
-            color: #111;
-            font-size: 28px;
-            text-transform: capitalize;
-            text-align: center;
-         }
-         .center-text span{
-            color: #EE1C47;
-         }
-         .products{
-         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, auto));
-        gap: 2rem;
-
-         }
-         .row {
-            
-            position: relative;
-            transition: all .40s;
-        }
-        .row img {
-            width: 100%;
-            height: auto;
-            transition: all .40s;
-        }
-        .row img:hover{
-            transform: scale(0.9);
-        }
-        .product-text h5{
-            position: absolute;
-            top: 13px;
-            left: 13px;
-            color: #fff;
-            font-size: 12px;
-            font-weight: 500;
-            text-transform: uppercase;
-            background-color: red;
-            padding: 3px 10px;
-            border-radius: 2px;
-        }  
-        .heart-icon{
-            position: absolute;
-            right: 0;
-            font-size: 20px;
-        }
-        .heart-icon:hover{
-            color: #EE1C47;
-        }
-        .ratting i{
-            color: #FF8C00;
-            font-size: 18px;
-        }
-        .price h4{
-            color: #111;
-            font-size: 16px;
-            text-transform: capitalize;
-            font-weight: 400;
-        }
-        footer {
-  margin-top: 100px;
-  background-color: #000;
-  padding: 30px;
-  color: #fff;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-between;
-}
-footer .social-media{
-  display: flex;
-}
-footer .social-media p{
-  margin-right: 15px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  padding: 5px;
-  text-align:center;
-  width: 20px;
-  cursor:pointer;
-}
-/* Fin du pied de page */
-
-@media screen and (max-width: 640px){
-  nav .onglets .link, nav h1{
-    display:none;
-  }
-  .cards .card img{
-    width: 300px;
-  }
-}
-.heart-icon {
-    position: absolute;
-    right: 0;
-    font-size: 20px;
-    color: #ccc; /* Default color */
-    transition: color 0.3s; /* Smooth transition */
-}
-
-.heart-icon.favorited {
-    color: #EE1C47; /* Pink color */
-}
-    </style>
+ 
 </head>
 <body>
-  <script>
-    function toggleFavorite(icon) {
-        icon.classList.toggle('favorited');
-    }
-</script>
-<!-- Barre de navigation -->
+  <!-- Barre de navigation -->
   <nav>
-    <h1>DERMAFLORE</h1>
+    <h1><p class="link"><a href="site_cosmetique.php">DERMAFLORE</a></p></h1> 
     <div class="onglets">
-      <!-- <p class="link"><a href="Nouveautés.html">Nouveautés</a></p> -->
+        <p class="link"><a href="Marques.html">Marques</a>
       <p class="link"><a href="Sérums.html">Sérum</a></p>
       <p class="link"><a href="Crème.html">Crèmes</a></p>
       <p class="link"><a href="Nettoyants.html">Nettoyants</a></p>
@@ -243,576 +25,687 @@ footer .social-media p{
         <input type="search" placeholder="Rechercher">
       </form>
       <p><i class="far fa-heart"></i></p>
-      <p><i class="fas fa-shopping-cart"></i></p>
+      <p><a href="Panier.html"><i class="fas fa-shopping-cart"></i></a></p>
+      <p id="open-modal"><i class="fas fa-user"></i></p>
     </div>
   </nav>
   <!-- Fin de la barre de navigation -->
+    <!-- Deuxième barre de navigation -->
+<div class="second-navbar">
+    <a href="second-link">MAGAZINS</a>
+    <a href="third-link">AIDE</a>
+    <a href="">FR | FR</a>
+    
+</div>
+  <!-- Fenêtre modale -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <!--formulaire de connexion ou d'inscription -->
+      <div id="login-form">
+        <h2>Se connecter</h2>
+        <form>
+          <label for="email">Adresse e-mail:</label><br>
+           <input type="email" id="email" name="email"><br>
+        <label for="password">Mot de passe:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <button type="submit">Se connecter</button>
+        </form>
+      </div>
 
+      <!-- Section pour s'inscrire -->
+    <div id="signup-section">
+      <h2>Vous n'avez pas de compte?</h2>
+      <p>Inscrivez-vous dès maintenant!</p>
+      <button id="signup-button">S'inscrire</button>
+    </div>
 
-    <section class="main-home">
-        <div class="main-text">
-          <h5><em></em></em></h5>  
-          <h1>  <br></h1>
-          <p></p>
-          <a href="#" class="main-btn"><i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="down-arrow">
-            <a href="#trending" class="down"><i class="fa-solid fa-arrow-down"></i></a>
-        </div>
-        </section>
-        <section>
-        <div class="center-text">
-            <h2>NOS PRODUITS<span> TENDANCES</span></h2>
-        </div>
-        <div class="products">
-           <div class="row">
-            <img src="data:image/jpeg;base64,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">
-            <div class="product-text"> 
-                <h5>-50%</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-               
-           
-            </div>
-            <div class="price">
-            <h4>BEAUTY OF JOSEON - Radiance Cleansing Balm</h4>
-            <p>24,90€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="data:image/jpeg;base64,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">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div class="price">
-            <h4>BEAUTY OF JOSEON Dynasty Cream (Tube ) - feelmyskin</h4>
-            <p>28,45€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="data:image/jpeg;base64,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">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>BEAUTY OF JOSEON Dynasty Cream (Tube ) - feelmyskin</h4>
-            <p>6,99€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://www.foliecosmetic.com/42203-thickbox_default/product.jpg">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                
-                
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Gel Nettoyant Éclat à la Vitamine C Garnier -</h4>
-            <p>9,99€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE_Nm1m02060XXnJqMUOn_Fa87tKfiafsTJg&s">
-            <div class="product-text"> 
-                <h5>-20%</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Gel Nettoyant Pure Active Intense 3-en-1 Nettoyant, Gommage et Masque Anti Pointst</h4>
-                <div class="row">
-                    <img src="data:image/jpeg;base64,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">
-                    <div class="product-text"> 
-                        <h5>Sale</h5>
-                    </div>
-                    <div class="heart-icon">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="ratting">
-                        <i class="fa-regular fa-star"></i>
-                       
-                        <i class="fa-regular fa-star"></i>
-                        <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-                    </div>
-                    <div>
-                    <h4>La Roche Posay Tolériane Gel moussant 400 ml | Pharmacie Agnes Praden</h4>
-                    <p>5,20€</p>
-                    </div>
-                   </div>  Running Set</h4>
-            <p></p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE_Nm1m02060XXnJqMUOn_Fa87tKfiafsTJg&s">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Gel Nettoyant Pure Active Intense 3-en-1 Nettoyant, Gommage et Masque Anti Pointst</h4>
-            <p>12,95€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR37UvfuIVq2z3dGx0oD7pm-Ud6hrD5MxWnkCIAkQsceeJCrsaMcxLuvNnNM1W_yyPQCjfzWUOVUtViPP3fQ03BqTDMKkzkBf81KiSKOk-PwJmf3pxw4XsO2WhN3QtBgDysreF70Q&usqp=CAc">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>La Roche Posay MELA B3 Gel micro-peeling unifiant éclat</h4>
-            <p>20,95€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="data:image/jpeg;base64,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">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Effaclar H Iso-Biome crème lavante apaisante 390ml</h4>
-            <p>10,95€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://cdn.pharmaciedesdrakkars.com/media/images/products/toleriane-gel-nettoyant-moussant-purifiant-visage-la-roche-posay4-1694438113.jpg">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Toleriane Gel Nettoyant Moussant Purifiant Visage</h4>
-            <p>12,29€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="data:image/jpeg;base64,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">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Toleriane Gel Nettoyant Moussant Purifiant Visage</h4>
-            <p>11€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="data:image/jpeg;base64,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">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-             <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Crème hydratante</h4>
-            <p>22€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://cdn11.bigcommerce.com/s-63354/images/stencil/1280x1280/products/4646/9017/La_Roche-Posay_Toleriane_Caring_Wash_400ml_1__31406.1616662435.jpg?c=2&imbypass=on">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>La Roche-Posay toleriane nettoyant soin</h4>
-            <p>29€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="data:image/jpeg;base64,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">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>La Roche Posay Tolériane Gel moussant 400 ml | Pharmacie Agnes Praden</h4>
-            <p>17€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREDZnyrd1PXuzthiX89LloygP8DejkbHkLfg&s">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>La roche-posay toleriane nettoyant nettoyant pour le visage moussant pour peau grasse</h4>
-            <p>39,95€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://www.parfumsmoinschers.com/59236-79087-thickbox/mousse-deau-micellaire-nettoyante-la-roche-posay-nettoyant---demaquillant-150-ml.jpg">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Nettoyant - Démaquillant Mousse d'eau micellaire nettoyante de La Roche Posay</h4>
-            <p>39,5€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://www.tradeinn.com/f/14058/140585054/la-roche-posay-gel-nettoyant-effaclar-400ml.jpg">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-               
-                
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>La roche posay Gel Nettoyant Effaclar 400ml Clair | Dressinn</h4>
-            <p>19,95€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://statics.docmorris.fr/static/promofarma/prod/product_images/mr/XGVYI_es_ES_0.png">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Gel Moussant Nettoyant Visage & Corps CeraVe Pureté Optimale</h4>
-            <p>10,95€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://statics.docmorris.fr/static/promofarma/prod/product_images/mr/XGVYI_es_ES_0.png">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-            </div>
-            <div>
-            <h4>CeraVe Gel Moussant 473ml </h4>
-            <p>13,29€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="data:image/jpeg;base64,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">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
+    </div>
+  </div>
+  <!-- Fin de la fenêtre modale -->
+    <!-- Fin du contenu du header -->
+  </header>
+  <!-- Fin du header -->  
+  <section >
+    <div class="container">
+      <div class="slider-wrapper">
+        <div class="image-list">
+            <img class="yayi" src="WAL.jpg" alt=>
+            <img class="yayi" src="WAL.jpg" alt="">
+            <img class="yayi" src="WAL.jpg" alt="">
+            <img class="yayi" src="WAL.jpg" alt="">
           </div>
-            <div>
-            <h4>Gel nettoyant visage moussant CERAVE</h4>
-            <p>6,23€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="data:image/jpeg;base64,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">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>CeraVe SA Gel Nettoyant Anti Rugosités 236m</h4>
-            <p>10,99€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="data:image/jpeg;base64,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">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>CeraVe Cleansers huile nettoyante pour un effet naturel </h4>
-            <p>9,10€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://cdn.redcare-pharmacie.fr/images/BE0/465/810/0/BE04658100-p11.jpg">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>The Ordinary GLUCOSIDE FOAMING CLEANSER</h4>
-            <p>12,95€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://cdn.redcare-pharmacie.fr/images/BE0/465/810/0/BE04658100-p11.jpg">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Nettoyant au squalane 50mL The Ordinary </h4>
-            <p>9,95€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://cdn.redcare-pharmacie.fr/images/BE0/465/810/0/BE04658100-p11.jpg">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>The Ordinary - Nettoyant cheveux et corps au sulphate 4 % - 240 ml</h4>
-            <p>10,60€</p>
-            </div>
-           </div> 
-           <div class="row">
-            <img src="https://www.thegroomingclinic.com/cdn/shop/files/TheOrdinaryGlycolicAcid7_ExfoliatingToner.jpg?v=1709727463">
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="ratting">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="heart-icon far fa-heart" onclick="toggleFavorite(this)"></i>
-            </div>
-            <div>
-            <h4>Nettoyant Ordinary</h4>
-            <p>13,95€</p>
-            </div>
-           </div> 
-           <div class="https://german-beautyshop.com/wp-content/uploads/2020/03/The-Ordinary-%E2%80%93-Alpha-Arbutine-2-HA-30-ml.jpg">
-           
-            <div class="product-text"> 
-                <h5>Sale</h5>
-            </div>
-            <div class="heart-icon">
-               
-            </div>
-            <div class="ratting">
-                
-            </div>
-            <div>
-            
-            </div>
-           </div> 
-
+         </div>
         </div>
     </section>
-<section>
-    <footer>
-        <p>&copy; Contactez-nous</p>
-        <div class="social-media">
-          <p><i class="fab fa-facebook-f"></i></p>
-          <p><i class="fab fa-twitter"></i></p>
-          <p><i class="fab fa-instagram"></i></p>
-          <p><i class="fab fa-linkedin-in"></i></p>
+
+    <section>
+    <div class="center-text">
+        <h2>Dans chaque femme réside une toile vierge<span> et les produits de beauté sont les pinceaux qui révèlent son chef-d'œuvre intérieur</span></h2>
+    </div>
+    <div class="products">
+        <div class="row">
+            <img src="SITE.jpeg">
+            <div class="product-text"> 
+                <h5>Vente</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Lotion hydratante</h4>
+            <p class="prix">9,60€</p>
+            <h4 class="panier">Ajouter au panier</h4>
+            </div>
+           </div> 
+           <div class="row">
+            <img src="SITE6.jpeg">
+            <div class="product-text"> 
+                <h5>Vente</h5>
+            </div>
+            <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div>
+            <h4>Anti-rugosité</h4>
+            <p class="prix">15,00€</p>
+            <h4 class="panier">Ajouter au panier</h4>
+            </div>
+           </div> 
+       
+       <div class="row">
+        <img src="SITE18.jpg">
+        <div class="product-text"> 
+            <h5>-10%</h5>
         </div>
-      </footer>
-   </section> 
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Lait hydratant</h4>
+        <p class="prix">25,15€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE19.jpg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Crème hydratante</h4>
+        <p class="prix">30,45€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE20.jpg">
+        <div class="product-text"> 
+            <h5>-20%</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+            <div>
+                <h4>Crème repatrice</h4>
+                <p class="prix">30,30€</p>
+                <h4 class="panier">Ajouter au panier</h4>
+                </div>
+
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE21.jpg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>SA Anti-rugosité</h4>
+        <p class="prix">17,75€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE30.jpeg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Lait hydratant Cerave</h4>
+        <p class="prix">10,20€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE4.webp">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Crème moussant</h4>
+        <p class="prix">13,30€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE5.jpeg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Anti-imperfection</h4>
+        <p class="prix">20,20€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE6.jpeg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Crème acnéique</h4>
+        <p class="prix">20,30€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE7.png">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Crème hydratante Bleu</h4>
+        <p class="prix">27,40€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE8.jpeg">
+        <div class="product-text"> 
+            <h5>-30%</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Crème hydratante Roche Posay</h4>
+        <P class="prix">16,00€</P> 
+        <h4 class="panier">Ajouter au panier</h4>  
+       </div>
+       </div> 
+       <div class="row">
+        <img src="SITE9.jpeg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Crème lavante hydratante</h4>
+        <p class="prix">30,60€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE10.jpg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>² 
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+     <h4>Crème solaire</h4>
+     <p class="prix">15,50€</p>
+     <h4 class="panier">Ajouter au panier</h4>   
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE13.jpg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>crème hydratante</h4>
+        <p class="prix">15,50€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE14.webp">
+        <div class="product-text"> 
+            <h5>-50%</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <!-- <div>
+        <h4>BEAUTY OF JOSEON - Mini Relief Sun : Rice + Probiotics SPF50+ PA++++, 10ml</h4>
+        <p>$99 - $129</p>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="B2.jpg">
+        <div class="product-text"> 
+            <h5>Sale</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+       -+     <i class="fa-solid fa-star-half-stroke"></i>
+        </div> -->
+        <div>
+        <h4>Crème Eclaircissant</h4>
+        <p class="prix">10€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE21.jpg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Protection solaire efficace et soin</h4>
+        <p class="prix">35,50€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE30.jpeg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Anti Irritation</h4>
+        <p class="prix">30,90€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE10.jpg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Crème exofoliant</h4>
+        <p class="prix">30,70€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+
+       <div class="row">
+        <img src="SITE15.jpeg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>BB crème classic</h4>
+        <P class="prix">20,25€</P>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE13.jpg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Toleriane Sensitive Crème </h4>
+        <p class="prix">22,45€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE9.jpeg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Crème hydratante visage</h4>
+        <p class="prix">38,90€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE11.jpeg">
+        <div class="product-text"> 
+            <h5>Vente</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Lipikar crème relipidante</h4>
+        <p class="prix">23,60€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+       <div class="row">
+        <img src="SITE14.webp">
+        <div class="product-text"> 
+            <h5>-5%</h5>
+        </div>
+        <div class="heart-icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="ratting">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div>
+        <h4>Crème Nettoyants</h4>
+        <p class="prix">24,60€</p>
+        <h4 class="panier">Ajouter au panier</h4>
+        </div>
+       </div> 
+      </section>
+      <section>
+       
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-section">
+      <h4 class="footer-heading">Service client</h4>
+      <ul class="footer-list">
+        <li><a href="#">Aide</a></li>
+        <li><a href="#">Suivi de commande</a></li>
+        <li><a href="#">Retours</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4 class="footer-heading">À propos de Dermaflore</h4>
+      <ul class="footer-list">
+        <li><a href="#">Nous contacter</a></li>
+        <li><a href="#">Actualités</a></li>
+        <li><a href="#">Investisseurs</a></li>
+        <li><a href="#">Carrières</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4 class="footer-heading">Plus de Dermaflore</h4>
+      <ul class="footer-list">
+        <li><a href="#">Cartes cadeaux</a></li>
+        <li><a href="#">Rechercher un magasin</a></li>
+        <li><a href="#">Bulletin</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4 class="footer-heading">Nous suivre</h4>
+      <ul class="footer-list social-icons">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <p>&copy; 2024 G R I M G A R. Tous droits réservés.</p>
+      <ul class="legal-links">
+        <li><a href="#">Conditions d'utilisation</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">Politique relative aux cookies</a></li>
+        <li><a href="#">Droit d'auteur</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</section>
+
+
+
+
+  <!-- Fin du pied de page -->
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('nav');
+
+  window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Faites défiler vers le bas
+      navbar.classList.add('nav-hidden');
+    } else {
+      // Faites défiler vers le haut
+      navbar.classList.remove('nav-hidden');
+    }
+
+    lastScrollTop = scrollTop;
+  });
+
+  // Fonction pour ouvrir la fenêtre modale
+  document.getElementById('open-modal').onclick = function() {
+    document.getElementById('modal').style.display = "block";
+  }
+
+  // Fonction pour fermer la fenêtre modale en cliquant sur le bouton "X"
+  document.getElementsByClassName('close')[0].onclick = function() {
+    document.getElementById('modal').style.display = "none";
+  }
+
+  // Fonction pour fermer la fenêtre modale en cliquant en dehors de celle-ci
+  window.onclick = function(event) {
+    if (event.target == document.getElementById('modal')) {
+      document.getElementById('modal').style.display = "none";
+    }
+  }
+</script>
 </body>
-</html>   
+</html>
