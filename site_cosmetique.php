@@ -1,3 +1,11 @@
+<?php
+// Inclure le fichier de configuration
+require_once 'config.php';
+
+// Votre code PHP pour interagir avec la base de données ici
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,7 +20,7 @@
 <body>
   <!-- Barre de navigation principal -->
   <nav>
-      <h1><p class="link"><a href="site_cosmetique.php">DERMAFLORE</a></p></h1>   
+      <h1><p class="link"><a href="site_cosmetique.php">DERMAFLORE</a></p></h1>
     <div class="onglets">
       <p class="link"><a href="Marques.html">Marques</a>
       <p class="link"><a href="Sérums.html">Sérums</a></p>
@@ -25,19 +33,29 @@
       </form>
 
       <p><i class="far fa-heart"></i></p>
-     
+     <?php
+session_start();
+
+// Vérifier si le panier existe dans la session
+if (isset($_SESSION["panier"]) && !empty($_SESSION["panier"])) {
+    // Calculer le nombre total de produits dans le panier
+    $nombre_produits = count($_SESSION["panier"]);
+
+    // Afficher le nombre de produits dans le panier
+    echo "<span>$nombre_produits</span>";
+} else {
+    // Si le panier est vide
+    echo "<span>0</span>";
+}
+?>
+
         <p><a href="Panier.html"><i class="fas fa-shopping-cart"></i></a></p>
+
       <p id="open-modal"><i class="fas fa-user"></i></p>
     </div>
   </nav>
   <!-- Fin de la barre de navigation  principal-->
-  <!-- Deuxième barre de navigation -->
-<div class="second-navbar">
-    <a href="second-link">MAGAZINS</a>
-    <a href="third-link">AIDE</a>
-    <a href="">FR | FR</a>
-    
-</div>
+ 
   
   <!-- Fenêtre modale -->
   <div id="modal" class="modal">
@@ -329,6 +347,35 @@
           <h4>Crème hydratante</h4>
             <p>30,45€</p>
           <h4 class="panier">Ajouter au panier</h4>
+          <?php
+session_start();
+require_once("config.php"); // Inclure le fichier de configuration de la base de données
+
+// Vérifier si le formulaire a été soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["ajouter au panier"])) {
+    // Récupérer l'ID du produit à ajouter au panier
+    $produit_id = $_POST["produit_id"];
+
+    // Récupérer les informations sur le produit depuis la base de données
+    $query = "SELECT * FROM produits WHERE id = :produit_id";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(":produit_id", $produit_id);
+    $stmt->execute();
+    $produit = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($produit) {
+        // Ajouter le produit au panier de l'utilisateur
+        $_SESSION["panier"][$produit_id] = $produit;
+        
+        // Rediriger l'utilisateur vers une page de confirmation ou vers la même page
+        header("Location: page_produit.php?id=$produit_id");
+        exit();
+    } else {
+        // Gérer l'erreur si le produit n'est pas trouvé dans la base de données
+        echo "Le produit n'existe pas.";
+    }
+}
+?>
         
           </div>
          </div> 
@@ -483,6 +530,7 @@
     </div>
   </div>
 </footer>
+
 
 
 
