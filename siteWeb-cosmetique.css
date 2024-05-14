@@ -48,6 +48,7 @@
       height: 50px;
     }
 
+
     .nav-hidden {
       top: -100px;
     }
@@ -56,6 +57,7 @@
       text-decoration: none;
       color: black;
     }
+
     nav form{
       height: auto;
 
@@ -65,11 +67,18 @@
       font-size: 20px;
       color:  #333333;
     }
+     nav h2 {
+      font-size: 20px;
+      color:  #333333;
+    }
+
     
     nav .onglets {
       display: flex;
       align-items: center;
     }
+
+    
     
     nav .onglets p {
       font-size: 17px;
@@ -85,6 +94,8 @@
       background-color: lightgray;
       outline: none;
     }
+
+
        /* Style pour la deuxième barre de navigation */
         .second-navbar {
             background-color: #555;
@@ -97,22 +108,7 @@
         }
 
 
-        .second-navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 5px 12px;
-            text-decoration: none;
-
-
-        }
-
-        .second-navbar a:hover {
-            background-color: #ddd;
-            color: black;
-
-        }
+        
          /* Style pour le logo 
         .navbar-logo {
             height: 30px;

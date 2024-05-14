@@ -1,3 +1,18 @@
+<?php
+session_start();
+include('db.php');
+
+
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit();
+}
+$user_id = $_SESSION['user_id'];
+$username = $_SESSION['username'];
+
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -11,9 +26,12 @@
   <script src="https://kit.fontawesome.com/8ddecbbdca.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
   <!-- Barre de navigation principal -->
   <nav>
       <h1><p class="link"><a href="site_cosmetique.php">DERMAFLORE</a></p></h1>
+      <h3>Bonjour, <?php echo $username; ?>!</h3>
+    
     <div class="onglets">
       <p class="link"><a href="Marques.html">Marques</a>
       <p class="link"><a href="Sérums.html">Sérums</a></p>
@@ -58,8 +76,8 @@ if (isset($_SESSION["panier"]) && !empty($_SESSION["panier"])) {
       <div id="login-form">
         <h2>Se connecter</h2>
         <form method="post" "">
-          <label for="email">e-mail:</label><br>
-           <input type="email" id="email" name="email"><br>
+          <label for="usernam">Adresse e-mail:</label><br>
+           <input type="usernam" id="usernam" name="usernam"><br>
         <label for="password">Mot de passe:</label><br>
         <input type="password" id="password" name="password"><br>
         <button type="submit">Se connecter</button>
