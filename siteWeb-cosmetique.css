@@ -47,7 +47,14 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       height: 50px;
     }
-
+     a:hover{
+      background-color: #EE1C47;
+      color: white;
+      border: 1px solid #EE1C47;
+      border-radius: 5px;
+      padding: 10px;
+      transition: all .25s ease;
+    }
 
     .nav-hidden {
       top: -100px;
@@ -57,7 +64,6 @@
       text-decoration: none;
       color: black;
     }
-
     nav form{
       height: auto;
 
@@ -77,8 +83,6 @@
       display: flex;
       align-items: center;
     }
-
-    
     
     nav .onglets p {
       font-size: 17px;
