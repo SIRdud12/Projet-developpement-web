@@ -56,19 +56,22 @@ if (isset($_SESSION["panier"]) && !empty($_SESSION["panier"])) {
       <span class="close">&times;</span>
       <!--formulaire de connexion ou d'inscription -->
       <div id="login-form">
-        <h2>Se connecter</h2>
-        <form method="post" "">
-          <label for="email">e-mail:</label><br>
-           <input type="email" id="email" name="email"><br>
-        <label for="password">Mot de passe:</label><br>
-        <input type="password" id="password" name="password"><br>
+        <h2>Connexion</h2>
+         <?php if (isset($error_message)) : ?>
+        <p style="color: red;"><?php echo $error_message; ?></p>
+    <?php endif; ?>
+        <form method="post" action="">
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" name="username" required><br>
+        <label for="password">Mot de passe:</label>
+        <input type="password" name="password" required><br>
         <button type="submit">Se connecter</button>
-        </form>
+    </form>
       </div>
 
       <!-- Section pour s'inscrire -->
     <div id="signup-section">
-      <h2>Vous n'avez pas de compte?</h2>
+      
       <p>Inscrivez-vous dès maintenant!</p>
       <button id="signup-button">S'inscrire</button>
     </div>
